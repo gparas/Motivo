@@ -1,0 +1,47 @@
+// Abstract Background 
+
+.abstract-bg{
+	content: "";
+	background-image: url("/images/bg-opt.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100%;
+	min-width: 540px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+@media (min-width: 1366px) {
+	.abstract-bg {
+		width: 1170px;
+	}
+}
+
+@media (max-width: 768px) {
+	.abstract-bg {
+		width: 768px;
+		top: -100px;
+	}
+}
+
+// Extra markup and styles for table-esque vertical and horizontal centering
+
+.site-wrapper {
+	display: table;
+	width: 100%;
+	height: 100%; /* For at least Firefox */
+	min-height: 100%;
+}
+.site-wrapper-inner {
+	display: table-cell;
+	vertical-align: top;
+}
+
+@media (min-width: $screen-sm) {
+	/* Start the vertical centering */
+	.site-wrapper-inner {
+		vertical-align: middle;
+	}
+}

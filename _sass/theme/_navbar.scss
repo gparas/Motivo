@@ -1,0 +1,23 @@
+.navbar-brand {
+	height: 90px;
+
+	> img{
+		width: 100px;
+	}
+}
+
+.navbar-nav {
+
+	> li > a{
+		line-height: 60px;
+	}
+
+	&.navbar-left > li > a{
+		font-size: 18px;
+
+		[class^="icon-"], [class*=" icon-"]{
+			font-size: 24px;
+		}
+	}
+	
+}

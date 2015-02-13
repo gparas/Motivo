@@ -1,0 +1,38 @@
+$heading-border-motivo: #D6DDE1;
+$heading-bg-color-motivo: #F5F6F7;
+$border-motivo: #E1EBF3;
+
+.panel{
+	@include box-shadow(0px 0px 8px rgba(0,0,0,0.3));
+}
+
+.panel-motivo{
+	@include panel-variant($border-motivo, $text-color, $heading-bg-color-motivo, $heading-border-motivo);
+
+	.nav > li > a:hover, .nav > li > a:focus{
+		background-color: #FAFBFC;
+	}
+
+	.nav-tabs{
+		border-color: $heading-border-motivo;
+
+		// Active state, and its :hover to override normal :hover
+		> li{
+
+			> a:hover{
+				border-color: #EBEEF0;
+			}
+
+			&.active > a {
+				&,
+				&:hover,
+				&:focus {
+					border-color: $heading-border-motivo $heading-border-motivo transparent;
+					background-color: #fff;
+				}
+			}
+		}
+
+	}
+
+}
