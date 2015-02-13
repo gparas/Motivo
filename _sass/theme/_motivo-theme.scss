@@ -2,7 +2,7 @@
 
 .abstract-bg{
 	content: "";
-	background-image: url("/images/bg-opt.svg");
+	background-image: url("{{ site.baseurl }}/images/bg-opt.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 100%;
