@@ -1,34 +1,31 @@
 @font-face {
-	font-family: 'motivo';
-	src:url('../fonts/motivo.eot?-rnke97');
-	src:url('../fonts/motivo.eot?#iefix-rnke97') format('embedded-opentype'),
-		url('../fonts/motivo.woff?-rnke97') format('woff'),
-		url('../fonts/motivo.ttf?-rnke97') format('truetype'),
-		url('../fonts/motivo.svg?-rnke97#motivo') format('svg');
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?-t1fe48');
+	src:url('../fonts/icomoon.eot?#iefix-t1fe48') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-t1fe48') format('woff'),
+		url('../fonts/icomoon.ttf?-t1fe48') format('truetype'),
+		url('../fonts/icomoon.svg?-t1fe48#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-	font-family: 'motivo';
+	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
+	font-size: 16px;
 
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-delete:before {
-	content: "\e600";
-}
-
-.icon-useruser:before {
-	content: "\e601";
+.icon-chain:before {
+	content: "\e607";
 }
 
 .icon-kataxorisi:before {
@@ -37,5 +34,45 @@
 
 .icon-protokolla:before {
 	content: "\e603";
+}
+
+.icon-open-in-new:before {
+	content: "\e608";
+}
+
+.icon-loop:before {
+	content: "\e601";
+}
+
+.icon-folder:before {
+	content: "\e606";
+}
+
+.icon-person:before {
+	content: "\e605";
+}
+
+.icon-calendar:before {
+	content: "\e600";
+}
+
+.icon-new-message:before {
+	content: "\e604";
+}
+
+.icon-power-off:before {
+	content: "\f011";
+}
+
+.icon-trash:before {
+	content: "\f014";
+}
+
+.icon-file:before {
+	content: "\f15b";
+}
+
+.icon-newspaper:before {
+	content: "\f1ea";
 }
 

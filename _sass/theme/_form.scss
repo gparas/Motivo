@@ -1,0 +1,11 @@
+.form-icon{
+	position: relative;
+
+	[class^="icon-"], [class*=" icon-"]{
+		padding: 10px 30px 10px 10px;
+		position: absolute;
+		color: #a8aeb6;
+		right: 0;
+		top: 0;
+	}
+}

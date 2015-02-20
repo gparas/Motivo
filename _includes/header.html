@@ -13,13 +13,22 @@
 				<li {% if page.permalink == "/protocols/" %}class="active"{% endif %}>
 					<a href="{{ site.baseurl }}/protocols"><span class="icon-protokolla"></span> Πρωτόκολλα</a>
 				</li>
+				<li {% if page.permalink == "/commitments/" %}class="active"{% endif %}>
+					<a href="{{ site.baseurl }}/commitments"><span class="icon-chain"></span> Δεσμεύσεις Εξερχομένων</a>
+				</li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li>
-					<a href="#">
-						<span class="icon-useruser"></span>
-						Admin
-					</a>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="icon-person"></span> Admin <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#"><span class="icon-folder"></span> Φάκελος: Kentrika</a></li>
+						<li><a href="#"><span class="icon-newspaper"></span> Περίοδος: secondo <strong>ΕΝΕΡΓΗ</strong></a></li>
+						<li class="divider"></li>
+						<li><a href="#"><span class="icon-person"></span> Διακίνηση Εγγράφων</a></li>
+						<li><a href="#"><span class="icon-person"></span> Εισαγωγή Πρωτοκόλλου</a></li>
+						<li class="divider"></li>
+						<li><a href="#"><span class="icon-power-off"></span> Αποσύνδεση</a></li>
+					</ul>
 				</li>
 			</ul>
 		</div>
