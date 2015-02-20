@@ -17,7 +17,14 @@ layout: signin
 				<input type="checkbox" value="remember-me"> Remember me
 			</label>
 		</div>
-		<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+
+		<p class="text-danger">This is an error message</p>
+
+		<div class="form-group">
+			<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+		</div>
+
+		<p class="text-muted">retrieve password click <a href="{{ "/retrieve-pass" | prepend: site.baseurl }}">here</a></p>
 	</form>
 
 </div> <!-- /container -->
