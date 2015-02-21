@@ -19,5 +19,23 @@
 			font-size: 20px;
 		}
 	}
-	
+
+}
+.navbar-inverse .navbar-nav{
+
+	> .open > a {
+		&,
+		&:hover,
+		&:focus {
+			background-color: $navbar-inverse-link-hover-bg;
+		}
+	}
+
+	> .open.active > a {
+		&,
+		&:hover,
+		&:focus {
+			background-color: $navbar-inverse-link-active-bg;
+		}
+	}
 }

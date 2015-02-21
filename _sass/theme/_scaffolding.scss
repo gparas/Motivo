@@ -1,3 +1,7 @@
+*:focus {
+    outline: 0;
+}
+
 html, body{
 	height: 100%;
 }
@@ -11,4 +15,8 @@ body{
 	background: linear-gradient(45deg,  #ffffff 0%,#ffffff 75%,#cfe3f0 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cfe3f0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	background-repeat: no-repeat;
+}
+
+body.bg{
+	background: url(http://subtlepatterns.com/patterns/cubes.png) repeat;
 }

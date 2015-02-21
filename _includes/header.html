@@ -7,8 +7,14 @@
 				</a>
 			</div>
 			<ul class="nav navbar-nav navbar-left">
-				<li {% if page.permalink == "/registration/" %}class="active"{% endif %}>
-					<a href="{{ site.baseurl }}/registration"><span class="icon-kataxorisi"></span> Καταχώρηση</a>
+				<li class="{% if page.permalink == "/registration/" %}active{% endif %} dropdown">
+					<a data-target="{{ site.baseurl }}/registration" href="{{ site.baseurl }}/registration" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false"><span class="icon-kataxorisi"></span> Καταχώρηση</a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Link</a></li>
+					</ul>
 				</li>
 				<li {% if page.permalink == "/protocols/" %}class="active"{% endif %}>
 					<a href="{{ site.baseurl }}/protocols"><span class="icon-protokolla"></span> Πρωτόκολλα</a>
