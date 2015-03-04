@@ -1,26 +1,35 @@
-.navbar-brand {
-	height: 90px;
+@media (min-width: $grid-float-breakpoint){
 
-	> img{
-		width: 100px;
-	}
-}
-
-.navbar-nav {
-
-	> li > a{
-		line-height: 60px;
+	.navbar{
+		margin-bottom: 60px;
 	}
 
-	&.navbar-left > li > a{
-		font-size: 16px;
+	.navbar-brand {
+		height: 90px;
 
-		[class^="icon-"], [class*=" icon-"]{
-			font-size: 20px;
+		> img{
+			width: 100px;
 		}
 	}
 
+
+	.navbar-nav {
+
+		> li > a{
+			line-height: 60px;
+		}
+
+		&.navbar-left > li > a{
+			font-size: 16px;
+
+			[class^="icon-"], [class*=" icon-"]{
+				font-size: 20px;
+			}
+		}
+
+	}
 }
+
 .navbar-inverse .navbar-nav{
 
 	> .open > a {
